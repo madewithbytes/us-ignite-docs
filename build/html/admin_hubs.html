@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Communities admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Events admin section" href="admin_events.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_events.html" title="Events admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="communities-admin-section">
+<h1>Communities admin section<a class="headerlink" href="#communities-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">hubs</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-community-requests">
+<h2>View existing Community Requests<a class="headerlink" href="#view-existing-community-requests" title="Permalink to this headline">¶</a></h2>
+<p>Users can apply to be the managers of an Ignite Community, these requests are listed in this section.</p>
+<p>The existing Hub Requests can be listed in the <tt class="docutils literal"><span class="pre">/admin/hubs/hubrequest/</span></tt> URL. From this section the details of these Hub Requests can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Hub Requests.</li>
+<li>Filter the Hub Requests by: Status or Creation date.</li>
+<li>Search the Hub Requests by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--hubs--hubrequest.png"><img alt="_images/admin--hubs--hubrequest.png" src="_images/admin--hubs--hubrequest.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-community-requests">
+<h2>Adding Community Requests<a class="headerlink" href="#adding-community-requests" title="Permalink to this headline">¶</a></h2>
+<p>Community requests <strong>must</strong> be only added from the front end of the application.</p>
+</div>
+<div class="section" id="managing-community-requests">
+<h2>Managing Community Requests<a class="headerlink" href="#managing-community-requests" title="Permalink to this headline">¶</a></h2>
+<p>Community requests will be notified via email. and these can be managed in the detail page of the request.</p>
+<p>The detail page of the notifications can be accessed in the <tt class="docutils literal"><span class="pre">/admin/hubs/hubrequest/</span></tt> URL.</p>
+<p>On the detail page of the request there is a link on the top right-hand corner that says &#8220;Approve this request&#8221;.</p>
+<a class="reference internal image-reference" href="_images/admin--hubs--hubrequest--4.png"><img alt="_images/admin--hubs--hubrequest--4.png" src="_images/admin--hubs--hubrequest--4.png" style="width: 100%;" /></a>
+<p>From here the community request can be approved or rejected.</p>
+<p>Once approved the communities are ready for the users to complete the Community profile and then publish it. If the community is not published it won&#8217;t be available anywhere in the site.</p>
+<a class="reference internal image-reference" href="_images/admin--hubs--hubrequest--approve--4.png"><img alt="_images/admin--hubs--hubrequest--approve--4.png" src="_images/admin--hubs--hubrequest--approve--4.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="view-existing-communities">
+<h2>View existing Communities<a class="headerlink" href="#view-existing-communities" title="Permalink to this headline">¶</a></h2>
+<p>The existing Communities can be listed in the <tt class="docutils literal"><span class="pre">/admin/hubs/hub/</span></tt> URL. From this section the details of these Hubs can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Communities.</li>
+<li>Filter the Communities by: status or creation date.</li>
+<li>Search the Communities by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--hubs--hub.png"><img alt="_images/admin--hubs--hub.png" src="_images/admin--hubs--hub.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-communities">
+<h2>Adding Communities<a class="headerlink" href="#adding-communities" title="Permalink to this headline">¶</a></h2>
+<p>Adding new Communities can be done as well from the admin section available in the <tt class="docutils literal"><span class="pre">/admin/hubs/hub/add/</span></tt> URL.</p>
+<p>The following fields are available to create Communities:</p>
+<ul class="simple">
+<li>Name: Required. Name of the community.</li>
+<li>Summary: Optional. Short description of the community.</li>
+<li>Description: Required. Description of the community.</li>
+<li>Contact: Optional. User that will be listed as the main contact for this community.</li>
+<li>Image: Optional. Image that depicts this community. Suggested size: 500x400px.</li>
+<li>Website: Optional. Website of this community, must be a fully qualified URL.</li>
+<li>Features: Optional. Existing NextGen features in this community.</li>
+<li>Position: Optional. Position of the community in a map.</li>
+<li>Notes: Optional. Admin notes of this community not visible in the site.</li>
+<li>Status: Required. Publication status of this community.</li>
+<li>Show in the homepage?: Optional. If marked this element will be shown in the homepage.</li>
+<li>Is featured: Optional. Determines if the community will appear in the featured list.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--hubs--hub--add.png"><img alt="_images/admin--hubs--hub--add.png" src="_images/admin--hubs--hub--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-communities">
+<h2>Unpublishing / Removing Communities<a class="headerlink" href="#unpublishing-removing-communities" title="Permalink to this headline">¶</a></h2>
+<p>In case Communities needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Community to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Hubs can be browsed in the <tt class="docutils literal"><span class="pre">/admin/hubs/hub/</span></tt> URL.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Communities admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-community-requests">View existing Community Requests</a></li>
+<li><a class="reference internal" href="#adding-community-requests">Adding Community Requests</a></li>
+<li><a class="reference internal" href="#managing-community-requests">Managing Community Requests</a></li>
+<li><a class="reference internal" href="#view-existing-communities">View existing Communities</a></li>
+<li><a class="reference internal" href="#adding-communities">Adding Communities</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-communities">Unpublishing / Removing Communities</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_events.html"
+                        title="previous chapter">Events admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_hubs.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_events.html" title="Events admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

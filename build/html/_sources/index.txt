@@ -18,6 +18,7 @@ Contents:
    admin_challenges
    admin_awards
    admin_events
+   admin_hubs
    bootstrap
    architecture
    commands
