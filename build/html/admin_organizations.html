@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Organizations admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Maps admin section" href="admin_maps.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_maps.html" title="Maps admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="organizations-admin-section">
+<h1>Organizations admin section<a class="headerlink" href="#organizations-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">organizations</span></tt> section and its usage in the site.</p>
+<p>Organizations can only be added by US Ignite via the admin section.</p>
+<div class="section" id="view-existing-organizations">
+<h2>View existing Organizations<a class="headerlink" href="#view-existing-organizations" title="Permalink to this headline">¶</a></h2>
+<p>The existing Organizations can be listed in the <tt class="docutils literal"><span class="pre">/admin/organizations/organization/</span></tt> URL. From this section the details of these Organizations can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Organizations.</li>
+<li>Filter the Organizations by: status.</li>
+<li>Search the Organizations by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--organizations--organization.png"><img alt="_images/admin--organizations--organization.png" src="_images/admin--organizations--organization.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-organizations">
+<h2>Adding Organizations<a class="headerlink" href="#adding-organizations" title="Permalink to this headline">¶</a></h2>
+<p>Organizations can only be added by US Ignite via the admin section. Once a user is associated to the organization as a member the user can edit the details of the Organization from the front end of the application.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Any user member can add more members part of the organization that will be able to edit its profile in the front end of the application. Members can also remove other members.</p>
+</div>
+<p>Adding Organizations can be done from the <tt class="docutils literal"><span class="pre">/admin/organizations/organization/add/</span></tt> URL.</p>
+<p>The following fields are available to create Organizations, these fields will appear in the Organization profile page:</p>
+<ul class="simple">
+<li>Organization name: Required. Name of the organization.</li>
+<li>Slug: Required. Slug used in the site for this organization.</li>
+<li>Status: Required. Publication status of this organization.</li>
+<li>Bio: Optional. Description of the organization.</li>
+<li>Image: Optional. Image descriptive of the organization. Suggested size: 500x400px.</li>
+<li>Website: Optional. Fully qualified URL for this organization.</li>
+<li>Interest ignite: Optional. Description of the interest in Ignite.</li>
+<li>Interests: Optional. Interests of the organization.</li>
+<li>Interests other: Optional. Other interests in case they are not listed in the option above.</li>
+<li>Resources available: Optional. Resources available to offer to the community from the organization.</li>
+<li>Position: Optional. Localization of the organization in a map.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--organizations--organization--add.png"><img alt="_images/admin--organizations--organization--add.png" src="_images/admin--organizations--organization--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-organizations">
+<h2>Unpublishing / Removing  Organizations<a class="headerlink" href="#unpublishing-removing-organizations" title="Permalink to this headline">¶</a></h2>
+<p>In case Organizations needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Organizations to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Organizations can be browsed in the <tt class="docutils literal"><span class="pre">/admin/organizations/organization/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="removing-members-of-organizations">
+<h2>Removing Members of Organizations<a class="headerlink" href="#removing-members-of-organizations" title="Permalink to this headline">¶</a></h2>
+<p>Removing members of the organizations can be done from the detail view by selecting the existing member to be removed and clicking the <tt class="docutils literal"><span class="pre">save</span></tt> button.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Organizations can be browsed in the <tt class="docutils literal"><span class="pre">/admin/organizations/organization/</span></tt> URL.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Organizations admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-organizations">View existing Organizations</a></li>
+<li><a class="reference internal" href="#adding-organizations">Adding Organizations</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-organizations">Unpublishing / Removing  Organizations</a></li>
+<li><a class="reference internal" href="#removing-members-of-organizations">Removing Members of Organizations</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_maps.html"
+                        title="previous chapter">Maps admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_organizations.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_maps.html" title="Maps admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

@@ -21,6 +21,7 @@ Contents:
    admin_events
    admin_hubs
    admin_maps
+   admin_organizations
    bootstrap
    architecture
    commands
