@@ -27,6 +27,8 @@ Contents:
    admin_sections
    admin_snippets
    admin_taggit
+   admin_testbeds
+   admin_uploads
    bootstrap
    architecture
    commands

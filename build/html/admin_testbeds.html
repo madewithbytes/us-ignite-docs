@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Testbeds admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Taggit admin section" href="admin_taggit.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_taggit.html" title="Taggit admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="testbeds-admin-section">
+<h1>Testbeds admin section<a class="headerlink" href="#testbeds-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">testbeds</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-testbeds">
+<h2>View existing Testbeds<a class="headerlink" href="#view-existing-testbeds" title="Permalink to this headline">¶</a></h2>
+<p>The existing Testbeds can be listed in the <tt class="docutils literal"><span class="pre">/admin/testbeds/testbed/</span></tt> URL. From this section the details of these Testbeds can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Testbeds.</li>
+<li>Filter the Testbeds by: status.</li>
+<li>Search the Testbeds by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--testbeds--testbed.png"><img alt="_images/admin--testbeds--testbed.png" src="_images/admin--testbeds--testbed.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-testbeds">
+<h2>Adding Testbeds<a class="headerlink" href="#adding-testbeds" title="Permalink to this headline">¶</a></h2>
+<p>Testbeds can be only added by US Ignite. Adding Testbeds can be done from the <tt class="docutils literal"><span class="pre">/admin/testbeds/testbed/add/</span></tt> URL.</p>
+<p>The following fields are available to create Testbeds:</p>
+<ul class="simple">
+<li>Name of the Testbed: Required.</li>
+<li>Summary: Optional. Short description of the Testbed.</li>
+<li>Description: Required.</li>
+<li>Contact: Optional. User to be contacted for this testbed.</li>
+<li>Organization: Optional. Organization associated to this testbed.</li>
+<li>Website: Optional. Fully qualified URL associated to this Testbed.</li>
+<li>Image: Optional. Image used for this resource.</li>
+<li>Network speed: Optional.</li>
+<li>Connections to other networks: Optional. Description of the conections of this testbed to other networks.</li>
+<li>Willingness to experiment: Required. Desire to experiment on these testbeds.</li>
+<li>Estimated passes # homes: Required. Number of estimated homes.</li>
+<li>Estimated passes # business: Required. Number of estimaed business.</li>
+<li>Estimated passes # community anchor: Required. Number of estimated anchors.</li>
+<li>Is advanced: Optional. Determines if this network has advanced characteristics.</li>
+<li>Communities: Optional. Communities associated to this testbed.</li>
+<li>Applications being piloted: Optional. Applications being piloted in this testbed.</li>
+<li>Features: Optional. Existing NextGen features in this testbed.</li>
+<li>Position: Optional. Localization of this testbed in a map.</li>
+<li>Status: Required. Publication status of this testbed in a map.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--testbeds--testbed--add.png"><img alt="_images/admin--testbeds--testbed--add.png" src="_images/admin--testbeds--testbed--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-testbeds">
+<h2>Unpublishing / Removing  Testbeds<a class="headerlink" href="#unpublishing-removing-testbeds" title="Permalink to this headline">¶</a></h2>
+<p>In case Testbeds needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Testbeds to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Testbeds can be browsed in the <tt class="docutils literal"><span class="pre">/admin/testbeds/testbed/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-network-speeds">
+<h2>View existing Network Speeds<a class="headerlink" href="#view-existing-network-speeds" title="Permalink to this headline">¶</a></h2>
+<p>The existing Network Speeds can be listed in the <tt class="docutils literal"><span class="pre">/admin/testbeds/networkspeed/</span></tt> URL. From this section the details of these Network Speeds can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Network Speeds.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--testbeds--networkspeed.png"><img alt="_images/admin--testbeds--networkspeed.png" src="_images/admin--testbeds--networkspeed.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-network-speeds">
+<h2>Adding Network Speeds<a class="headerlink" href="#adding-network-speeds" title="Permalink to this headline">¶</a></h2>
+<p>Adding Network Speeds can be done from the <tt class="docutils literal"><span class="pre">/admin/testbeds/networkspeed/add/</span></tt> URL.</p>
+<p>The following fields are available to create Network Speeds:</p>
+<ul class="simple">
+<li>Name: Required. Name used in the network speed.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--testbeds--networkspeed--add.png"><img alt="_images/admin--testbeds--networkspeed--add.png" src="_images/admin--testbeds--networkspeed--add.png" style="width: 100%;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Testbeds admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-testbeds">View existing Testbeds</a></li>
+<li><a class="reference internal" href="#adding-testbeds">Adding Testbeds</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-testbeds">Unpublishing / Removing  Testbeds</a></li>
+<li><a class="reference internal" href="#view-existing-network-speeds">View existing Network Speeds</a></li>
+<li><a class="reference internal" href="#adding-network-speeds">Adding Network Speeds</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_taggit.html"
+                        title="previous chapter">Taggit admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_testbeds.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_taggit.html" title="Taggit admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
