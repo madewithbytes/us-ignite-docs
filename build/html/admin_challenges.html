@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Challenges admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Admin awards" href="admin_awards.html" />
+    <link rel="prev" title="Admin applications" href="admin_apps.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="admin_awards.html" title="Admin awards"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_apps.html" title="Admin applications"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="challenges-admin-section">
+<h1>Challenges admin section<a class="headerlink" href="#challenges-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">challenges</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-challenges">
+<h2>View existing Challenges<a class="headerlink" href="#view-existing-challenges" title="Permalink to this headline">¶</a></h2>
+<p>The existing Challenges can be listed in the <tt class="docutils literal"><span class="pre">/admin/challenges/challenge/</span></tt> URL. From this section the details of these Challenges can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Challenges.</li>
+<li>Filter the Challenges by: status, is external?, start date/time, end date/time.</li>
+<li>Search the Challenges by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--challenges--challenge.png"><img alt="_images/admin--challenges--challenge.png" src="_images/admin--challenges--challenge.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-challenges">
+<h2>Adding Challenges<a class="headerlink" href="#adding-challenges" title="Permalink to this headline">¶</a></h2>
+<p>The challenges are a list of questions that the application owners can fill in in order to participate.</p>
+<p>Adding Challenges can only be added via the the admin URL: <tt class="docutils literal"><span class="pre">/admin/challenges/challenge/add/</span></tt>.</p>
+<p>The following fields are available to create Challenges:</p>
+<ul class="simple">
+<li>Name: Required. Name of the challenge.</li>
+<li>Status: Required. Status of the publication of the challenge.</li>
+<li>Start datetime: Required. Start date of the challenge in US/Eastern timezone.</li>
+<li>End datetime: Required. End date of the challenge in US/Eastern timezone.</li>
+<li>URL: Optional. Fully qualified URL in case the challenge takes place in a different site. (Please enter a URL starting with http or https).</li>
+<li>Is external: Optional. Determines if the challenge is to be held in a different Site.</li>
+<li>Summary: Required. Short description of the challenge.</li>
+<li>Description: Required. Description of the challenge.</li>
+<li>Event dates: Optional. Important event dates.</li>
+<li>Acknowledgments: Optional. Partners/Sponsors/Acknowledgements</li>
+<li>Image: Optional. Image descriptive for the challenge. Suggested size: 500x400px.</li>
+<li>Organization: Optional. Will be displayed as an organization associated to this event.</li>
+<li>Hide entries: Optional. Determines if the active entries are published only after the Challenge has finished.</li>
+<li>User: Optional. User responsible for this Challenge, will appear in the detail page.</li>
+<li>Notes: Optional. Admin notes regarding this challenges, not displayed in the site.</li>
+<li>Questions. Unlimited. The questions will be displayed in the order specified. The will be shown as a form in the order specified to the participants. The answers to the questions will be required (if specified) in order to participate.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The hide entries flag changes the mechanics of the competition by showing them while the competion is open or not.</p>
+</div>
+<a class="reference internal image-reference" href="_images/admin--challenges--challenge--add.png"><img alt="_images/admin--challenges--challenge--add.png" src="_images/admin--challenges--challenge--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-challenges">
+<h2>Unpublishing / Removing  Challenges<a class="headerlink" href="#unpublishing-removing-challenges" title="Permalink to this headline">¶</a></h2>
+<p>In case Challenges needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Challenges to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Challenges can be browsed in the <tt class="docutils literal"><span class="pre">/admin/challenges/challenge/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-entries">
+<h2>View existing Entries<a class="headerlink" href="#view-existing-entries" title="Permalink to this headline">¶</a></h2>
+<p>The existing Entries can be listed in the <tt class="docutils literal"><span class="pre">/admin/challenges/entry/</span></tt> URL. From this section the details of these Entries can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Entries.</li>
+<li>Filter the Entries by: Challenge or status.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--challenges--entry.png"><img alt="_images/admin--challenges--entry.png" src="_images/admin--challenges--entry.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="view-entry-detail">
+<h2>View Entry detail<a class="headerlink" href="#view-entry-detail" title="Permalink to this headline">¶</a></h2>
+<p>Opening the existing entries will show the details of the application and the questions answered.</p>
+<p>The following fields are visible in the detail of the Entries:</p>
+<ul class="simple">
+<li>Challenge: Required. Challenge for this entry.</li>
+<li>Application: Required. Application associated to this entry.</li>
+<li>Status: Required. Status of this entry.</li>
+<li>Notes: Optional. Admin notes, not visible on the site.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--challenges--entry--add.png"><img alt="_images/admin--challenges--entry--add.png" src="_images/admin--challenges--entry--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-entries">
+<h2>Adding Entries<a class="headerlink" href="#adding-entries" title="Permalink to this headline">¶</a></h2>
+<p>Adding entries must strictly be done via the front end of the Challenge form once it has opened.</p>
+</div>
+<div class="section" id="removing-entries">
+<h2>Removing  Entries<a class="headerlink" href="#removing-entries" title="Permalink to this headline">¶</a></h2>
+<p>In case Entries needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Entries to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Entries can be browsed and filtered in the <tt class="docutils literal"><span class="pre">/admin/challenges/entry/</span></tt> URL.</p>
+</div>
+<a class="reference internal image-reference" href="_images/admin--challenges--entry--add.png"><img alt="_images/admin--challenges--entry--add.png" src="_images/admin--challenges--entry--add.png" style="width: 100%;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Challenges admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-challenges">View existing Challenges</a></li>
+<li><a class="reference internal" href="#adding-challenges">Adding Challenges</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-challenges">Unpublishing / Removing  Challenges</a></li>
+<li><a class="reference internal" href="#view-existing-entries">View existing Entries</a></li>
+<li><a class="reference internal" href="#view-entry-detail">View Entry detail</a></li>
+<li><a class="reference internal" href="#adding-entries">Adding Entries</a></li>
+<li><a class="reference internal" href="#removing-entries">Removing  Entries</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_apps.html"
+                        title="previous chapter">Admin applications</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="admin_awards.html"
+                        title="next chapter">Admin awards</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_challenges.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="admin_awards.html" title="Admin awards"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_apps.html" title="Admin applications"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

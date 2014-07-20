@@ -15,6 +15,7 @@ Contents:
    admin_users
    admin_blog
    admin_apps
+   admin_challenges
    admin_awards
    bootstrap
    architecture
