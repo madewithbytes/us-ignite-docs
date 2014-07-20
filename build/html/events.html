@@ -51,10 +51,43 @@
             
   <div class="section" id="events">
 <h1>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
-<p>Registered users can create events</p>
-<p>Users can view a list of upcoming events</p>
-<p>Users can view upcoming events in the hub homepage.</p>
-<p>Owners can edit the event.</p>
+<div class="section" id="adding-an-event">
+<h2>Adding an event<a class="headerlink" href="#adding-an-event" title="Permalink to this headline">¶</a></h2>
+<p>Registered users can create events at <tt class="docutils literal"><span class="pre">/event/add/</span></tt>. An event in order to be created require:</p>
+<ul class="simple">
+<li>Event name: Required. Name of the event.</li>
+<li>Status: Required. Publication status of the event.</li>
+<li>Image: Optional. Image describing the event. Suggested size: 500x400px.</li>
+<li>Short description: Required. Short summary of the event.</li>
+<li>Start Date/Time: Required. Start date/time of the event.</li>
+<li>End Date/Time: Optional. End date/time of the event if applicable.</li>
+<li>Timezone: Required. US Timezone used for the event.</li>
+<li>Address: Required. Address of the event.</li>
+<li>Organization: Optional. Organization associated to this event.</li>
+<li>Scope: Required. Scope of the event: National or Regional.</li>
+<li>Audiences: Optional. Target audience for this event.</li>
+<li>Audience other: Optional. Other audience not listed in the previous option.</li>
+<li>Website: Optional. Fully qualified URL for the event. (URL starting with http or https).</li>
+<li>Event type: Optional. Category of the event.</li>
+<li>Tickets URL: Optional. Fully qualified URL to get tickets for this event.</li>
+<li>Communities: Optional. Communities associated to this event.</li>
+<li>Position: Optional. Location of this event in a map.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+<li>Event URLs: Extra URLs associated to this event.</li>
+</ul>
+</div>
+<div class="section" id="listing-published-events">
+<h2>Listing published events<a class="headerlink" href="#listing-published-events" title="Permalink to this headline">¶</a></h2>
+<p>Users can view a list of upcoming events at <tt class="docutils literal"><span class="pre">/event/</span></tt>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Upcomign published events can be viewed in the hub homepage associated to the events.</p>
+</div>
+</div>
+<div class="section" id="editing-events">
+<h2>Editing events<a class="headerlink" href="#editing-events" title="Permalink to this headline">¶</a></h2>
+<p>Owners of the events can edit the saved event from the detail page of the event.</p>
+</div>
 </div>
 
 
@@ -63,6 +96,16 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Events</a><ul>
+<li><a class="reference internal" href="#adding-an-event">Adding an event</a></li>
+<li><a class="reference internal" href="#listing-published-events">Listing published events</a></li>
+<li><a class="reference internal" href="#editing-events">Editing events</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="applications.html"
                         title="previous chapter">Applications</a></p>
