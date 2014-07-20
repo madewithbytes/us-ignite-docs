@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Admin applications &mdash; US Ignite 0.1a documentation</title>
+    <title>Apps admin section &mdash; US Ignite 0.1a documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -49,23 +49,134 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="admin-applications">
-<h1>Admin applications<a class="headerlink" href="#admin-applications" title="Permalink to this headline">¶</a></h1>
-<p>This section list the <tt class="docutils literal"><span class="pre">applications</span></tt> and applications mechanics of the site.</p>
-<div class="section" id="list-existing-applications">
-<h2>List existing applications<a class="headerlink" href="#list-existing-applications" title="Permalink to this headline">¶</a></h2>
-<p>The existing applications can be listed in <tt class="docutils literal"><span class="pre">/admin/apps/application/</span></tt>, from there the following actions can be performed:</p>
+  <div class="section" id="apps-admin-section">
+<h1>Apps admin section<a class="headerlink" href="#apps-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">apps</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-applications">
+<h2>View existing Applications<a class="headerlink" href="#view-existing-applications" title="Permalink to this headline">¶</a></h2>
+<p>The existing Applications can be listed in the <tt class="docutils literal"><span class="pre">/admin/apps/application/</span></tt> URL. From this section the details of these Applications can be inspected.</p>
+<p>And the following actions can be performed:</p>
 <ul class="simple">
-<li>View the details of the application.</li>
-<li>Filtered the applications by: stage, category, status or date.</li>
-<li>Search the applications by their contents.</li>
+<li>View the details of the Applications.</li>
+<li>Filter the Applications by: Stage, Domain, Status or Creation date.</li>
+<li>Search the Applications by their contents.</li>
 </ul>
 <a class="reference internal image-reference" href="_images/admin--apps--application.png"><img alt="_images/admin--apps--application.png" src="_images/admin--apps--application.png" style="width: 100%;" /></a>
 </div>
-<div class="section" id="unpublishing-an-application">
-<h2>Unpublishing an application<a class="headerlink" href="#unpublishing-an-application" title="Permalink to this headline">¶</a></h2>
-<p>In case an application needs to be unpublish it can be done from the detail menu of the application, this can be done by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the application as <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt>.</p>
+<div class="section" id="adding-applications">
+<h2>Adding Applications<a class="headerlink" href="#adding-applications" title="Permalink to this headline">¶</a></h2>
+<p>Adding applications <strong>must</strong> be strictly done from the front end of the site.</p>
+</div>
+<div class="section" id="viewing-applications-details">
+<h2>Viewing applications details<a class="headerlink" href="#viewing-applications-details" title="Permalink to this headline">¶</a></h2>
+<p>Accessing Applications detail pages can be done from the <tt class="docutils literal"><span class="pre">/admin/apps/application/</span></tt> URL.</p>
+<p>The following fields are part of the Applications detail:</p>
+<ul class="simple">
+<li>Application name: Required. Name of the application</li>
+<li>Stage: Required. Option that best reflects the applciation current progress.</li>
+<li>Website: Optional. Fully qualified URL of the website.</li>
+<li>Image: Optional. Logo, screenshot, application diagram, photo of demo. Image suggested size: 500x400px.</li>
+<li>Summary: Optional. One sentence (tweet-length) pitch/summary of the application.</li>
+<li>Impact statement: Optional. Who benefits and how in one paragraph or less.</li>
+<li>Assistance: Optional. Does the Project require any help? (e.g. specific technical skills, subject matter experts, design help, partners for pilots, etc)</li>
+<li>Team name: Optional. Organization/Company name of developers.</li>
+<li>Team description: Optional. Short description of the team.</li>
+<li>Acknowledgments: Optional. Acknowledgements from the application team.</li>
+<li>Notes: Optional. Admin notes regarding this application, not public.</li>
+<li>Slug: Optional. Slug used for this application.</li>
+<li>Status: Required. Status of the publication of the application.</li>
+<li>Is featured: Optional. Show this app should be shown as part of the featured list.</li>
+<li>Owner: Optional. Owner of this application.</li>
+<li>Features: Optional. Features that this application takes advantage of.</li>
+<li>Features other: Optional. Other features not listed in the previous option.</li>
+<li>Domain: Optional. Primary public benefit served by this application.</li>
+<li>Awards: Optional. Recognition or Awards.</li>
+<li>Position: Optional. Position in a map of this application.</li>
+<li>Show in the homepage?: Optional. If marked this element will be shown in the homepage. Only a single element will be shown, once saved will replace any previous element in the homepage.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+<li>Application URLs. Extra URLs where progress of this application can be followed.</li>
+<li>Application media. Extra imagery/videos that are part of this application.</li>
+</ul>
 <a class="reference internal image-reference" href="_images/admin--apps--application--168.png"><img alt="_images/admin--apps--application--168.png" src="_images/admin--apps--application--168.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-applications">
+<h2>Unpublishing / Removing  Applications<a class="headerlink" href="#unpublishing-removing-applications" title="Permalink to this headline">¶</a></h2>
+<p>In case Applications needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Applications to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Applications can be browsed in the <tt class="docutils literal"><span class="pre">/admin/apps/application/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-domains">
+<h2>View existing Domains<a class="headerlink" href="#view-existing-domains" title="Permalink to this headline">¶</a></h2>
+<p>Domains are the categories which describe the main purpose of an application. These are used to filter and organize the applications in the front end. The names of the domains are used to determine the current imagery used to describe them.</p>
+<p>The existing Domains can be listed in the <tt class="docutils literal"><span class="pre">/admin/apps/domain/</span></tt> URL. From this section the details of these Domains can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Domains.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--apps--domain.png"><img alt="_images/admin--apps--domain.png" src="_images/admin--apps--domain.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-domains">
+<h2>Adding Domains<a class="headerlink" href="#adding-domains" title="Permalink to this headline">¶</a></h2>
+<p>Adding Domains can be done from the <tt class="docutils literal"><span class="pre">/admin/apps/domain/add/</span></tt> URL.</p>
+<p>The following fields are available to create Domains:</p>
+<ul class="simple">
+<li>Name: Required. Name of the application.</li>
+</ul>
+<p>These Domains are created so ...</p>
+<a class="reference internal image-reference" href="_images/admin--apps--domain--add.png"><img alt="_images/admin--apps--domain--add.png" src="_images/admin--apps--domain--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="view-existing-features">
+<h2>View existing Features<a class="headerlink" href="#view-existing-features" title="Permalink to this headline">¶</a></h2>
+<p>The features describe the next-gen elements that Applications take advantage of.</p>
+<p>The existing Features can be listed in the <tt class="docutils literal"><span class="pre">/admin/apps/feature/</span></tt> URL. From this section the details of these Features can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Features.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--apps--feature.png"><img alt="_images/admin--apps--feature.png" src="_images/admin--apps--feature.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-features">
+<h2>Adding Features<a class="headerlink" href="#adding-features" title="Permalink to this headline">¶</a></h2>
+<p>Adding Features can be done from the <tt class="docutils literal"><span class="pre">/admin/apps/feature/add/</span></tt> URL.</p>
+<p>The following fields are available to create Features:</p>
+<ul class="simple">
+<li>Name: Required. Name of the feature.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--apps--feature--add.png"><img alt="_images/admin--apps--feature--add.png" src="_images/admin--apps--feature--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="view-existing-pages">
+<h2>View existing Pages<a class="headerlink" href="#view-existing-pages" title="Permalink to this headline">¶</a></h2>
+<p>The pages are used to showcase a determined list of applications.</p>
+<p>The existing Pages can be listed in the <tt class="docutils literal"><span class="pre">/admin/apps/page/</span></tt> URL. From this section the details of these Pages can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Pages.</li>
+<li>Filter the Pages by: Status or Creation date..</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--apps--page.png"><img alt="_images/admin--apps--page.png" src="_images/admin--apps--page.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-pages">
+<h2>Adding Pages<a class="headerlink" href="#adding-pages" title="Permalink to this headline">¶</a></h2>
+<p>Adding Pages can be done from the <tt class="docutils literal"><span class="pre">/admin/apps/page/add/</span></tt> URL.</p>
+<p>The following fields are available to create Pages:</p>
+<ul class="simple">
+<li>Name: Required. Name of the list to be generated.</li>
+<li>Status: Required. Status of the list of applications.</li>
+<li>Description: Optional. Description of the application list.</li>
+<li>Page Applications: List of applications that will be shown in the order specified.</li>
+</ul>
+<p>These Pages are created so ...</p>
+<a class="reference internal image-reference" href="_images/admin--apps--page--add.png"><img alt="_images/admin--apps--page--add.png" src="_images/admin--apps--page--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-pages">
+<h2>Unpublishing / Removing  Pages<a class="headerlink" href="#unpublishing-removing-pages" title="Permalink to this headline">¶</a></h2>
+<p>In case Pages needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Pages to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Pages can be browsed in the <tt class="docutils literal"><span class="pre">/admin/apps/page/</span></tt> URL.</p>
+</div>
 </div>
 </div>
 
@@ -77,9 +188,18 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Admin applications</a><ul>
-<li><a class="reference internal" href="#list-existing-applications">List existing applications</a></li>
-<li><a class="reference internal" href="#unpublishing-an-application">Unpublishing an application</a></li>
+<li><a class="reference internal" href="#">Apps admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-applications">View existing Applications</a></li>
+<li><a class="reference internal" href="#adding-applications">Adding Applications</a></li>
+<li><a class="reference internal" href="#viewing-applications-details">Viewing applications details</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-applications">Unpublishing / Removing  Applications</a></li>
+<li><a class="reference internal" href="#view-existing-domains">View existing Domains</a></li>
+<li><a class="reference internal" href="#adding-domains">Adding Domains</a></li>
+<li><a class="reference internal" href="#view-existing-features">View existing Features</a></li>
+<li><a class="reference internal" href="#adding-features">Adding Features</a></li>
+<li><a class="reference internal" href="#view-existing-pages">View existing Pages</a></li>
+<li><a class="reference internal" href="#adding-pages">Adding Pages</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-pages">Unpublishing / Removing  Pages</a></li>
 </ul>
 </li>
 </ul>

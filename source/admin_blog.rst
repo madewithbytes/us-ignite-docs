@@ -52,7 +52,7 @@ The following fields are available in the Posts:
 - Author: Author of the post.
 - Publication date: Optional. Date when the blog post was publicated.
 - Update date: Optional. Date when the post was last updated
-- Is featured: Optional. Show this post should be shown as part of the feature list.
+- Is featured: Optional. Show this post should be shown as part of the featured list.
 - Status: Required. Determines if the post is public or not.
 - Is custom: Optional. If marked will stop the importer from updating the content of this Post.
 - Tags: Optional. A comma-separated list of tags.
