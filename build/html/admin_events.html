@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>events admin section &mdash; US Ignite 0.1a documentation</title>
+    <title>Events admin section &mdash; US Ignite 0.1a documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,7 +23,9 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" /> 
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Admin awards" href="admin_awards.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_awards.html" title="Admin awards"
+             accesskey="P">previous</a> |</li>
         <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -42,10 +50,62 @@
           <div class="body">
             
   <div class="section" id="events-admin-section">
-<h1>events admin section<a class="headerlink" href="#events-admin-section" title="Permalink to this headline">¶</a></h1>
+<h1>Events admin section<a class="headerlink" href="#events-admin-section" title="Permalink to this headline">¶</a></h1>
 <p>This section list the <tt class="docutils literal"><span class="pre">events</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-events">
+<h2>View existing Events<a class="headerlink" href="#view-existing-events" title="Permalink to this headline">¶</a></h2>
+<p>The existing Events can be listed in the <tt class="docutils literal"><span class="pre">/admin/events/event/</span></tt> URL. From this section the details of these Events can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Events.</li>
+<li>Filter the Events by: Status, Start date/time, Is featured? or Creation date.</li>
+<li>Search the Events by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--events--event.png"><img alt="_images/admin--events--event.png" src="_images/admin--events--event.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-events">
+<h2>Adding Events<a class="headerlink" href="#adding-events" title="Permalink to this headline">¶</a></h2>
+<p>Adding Events can be done from the front end of the application or the  <tt class="docutils literal"><span class="pre">/admin/events/event/add/</span></tt> URL.</p>
+<p>The following fields are available to create Events:</p>
+<ul class="simple">
+<li>Event name: Required. Name of the event.</li>
+<li>Slug: Optional. Slug used for the event.</li>
+<li>Status: Required. Publication status of the event.</li>
+<li>Image: Optional. Image describing the event. Suggested size: 500x400px.</li>
+<li>Short description: Required. Short summary of the event.</li>
+<li>Start Date/Time: Required. Start date/time of the event.</li>
+<li>End Date/Time: Optional. End date/time of the event if applicable.</li>
+<li>Timezone: Required. US Timezone used for the event.</li>
+<li>Address: Required. Address of the event.</li>
+<li>Organization: Optional. Organization associated to this event.</li>
+<li>Scope: Required. Scope of the event: National or Regional.</li>
+<li>Audiences: Optional. Target audience for this event.</li>
+<li>Audience other: Optional. Other audience not listed in the previous option.</li>
+<li>Website: Optional. Fully qualified URL for the event. (URL starting with http or https).</li>
+<li>Event type: Optional. Category of the event.</li>
+<li>Tickets URL: Optional. Fully qualified URL to get tickets for this event.</li>
+<li>Communities: Optional. Communities associated to this event.</li>
+<li>Position: Optional. Location of this event in a map.</li>
+<li>User: Optional. Owner of this event.</li>
+<li>Is ignite?: Optional. Determines if the event is an Ignite event.</li>
+<li>Is featured?: Optional. Determines if the event should be shown as part of the featured list.</li>
+<li>Notes: Optional. Admin notes regarding this event, not public.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+<li>Event URLs: Extra URLs associated to this event.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--events--event--add.png"><img alt="_images/admin--events--event--add.png" src="_images/admin--events--event--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-events">
+<h2>Unpublishing / Removing  Events<a class="headerlink" href="#unpublishing-removing-events" title="Permalink to this headline">¶</a></h2>
+<p>In case Events needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Events to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Events can be browsed in the <tt class="docutils literal"><span class="pre">/admin/events/event/</span></tt> URL.</p>
+</div>
+</div>
 <div class="section" id="view-existing-audiences">
 <h2>View existing Audiences<a class="headerlink" href="#view-existing-audiences" title="Permalink to this headline">¶</a></h2>
+<p>Audiences are a list of audiences receptive for the events, used in the select menu when creating one.</p>
 <p>The existing Audiences can be listed in the <tt class="docutils literal"><span class="pre">/admin/events/audience/</span></tt> URL. From this section the details of these Audiences can be inspected.</p>
 <p>And the following actions can be performed:</p>
 <ul class="simple">
@@ -58,69 +118,9 @@
 <p>Adding Audiences can be done from the <tt class="docutils literal"><span class="pre">/admin/events/audience/add/</span></tt> URL.</p>
 <p>The following fields are available to create Audiences:</p>
 <ul class="simple">
-<li>Name: Required.</li>
+<li>Name: Required. Name for the audience.</li>
 </ul>
-<p>These Audiences are created so ...</p>
 <a class="reference internal image-reference" href="_images/admin--events--audience--add.png"><img alt="_images/admin--events--audience--add.png" src="_images/admin--events--audience--add.png" style="width: 100%;" /></a>
-</div>
-<div class="section" id="unpublishing-removing-audiences">
-<h2>Unpublishing / Removing  Audiences<a class="headerlink" href="#unpublishing-removing-audiences" title="Permalink to this headline">¶</a></h2>
-<p>In case Audiences needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Audiences to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The Audiences can be browsed in the <tt class="docutils literal"><span class="pre">/admin/events/audience/</span></tt> URL.</p>
-</div>
-</div>
-<div class="section" id="view-existing-events">
-<h2>View existing Events<a class="headerlink" href="#view-existing-events" title="Permalink to this headline">¶</a></h2>
-<p>The existing Events can be listed in the <tt class="docutils literal"><span class="pre">/admin/events/event/</span></tt> URL. From this section the details of these Events can be inspected.</p>
-<p>And the following actions can be performed:</p>
-<ul class="simple">
-<li>View the details of the Events.</li>
-<li>Filter the Events by: status, start_datetime, is_featured, created.</li>
-<li>Search the Events by their contents.</li>
-</ul>
-<a class="reference internal image-reference" href="_images/admin--events--event.png"><img alt="_images/admin--events--event.png" src="_images/admin--events--event.png" style="width: 100%;" /></a>
-</div>
-<div class="section" id="adding-events">
-<h2>Adding Events<a class="headerlink" href="#adding-events" title="Permalink to this headline">¶</a></h2>
-<p>Adding Events can be done from the <tt class="docutils literal"><span class="pre">/admin/events/event/add/</span></tt> URL.</p>
-<p>The following fields are available to create Events:</p>
-<ul class="simple">
-<li>Event name: Required.</li>
-<li>Slug: Optional.</li>
-<li>Status: Required.</li>
-<li>Image: Optional. Image suggested size: 500x400px</li>
-<li>Short description: Required.</li>
-<li>Start Date/Time: Required.</li>
-<li>End Date/Time: Optional.</li>
-<li>Timezone: Required.</li>
-<li>Address: Required.</li>
-<li>Organization: Optional.</li>
-<li>Scope: Required.</li>
-<li>Audiences: Optional.  Hold down &#8220;Control&#8221;, or &#8220;Command&#8221; on a Mac, to select more than one.</li>
-<li>Audience other: Optional.</li>
-<li>Website: Optional. Please enter a URL starting with http or https</li>
-<li>Event type: Optional.</li>
-<li>Tickets URL: Optional. Please enter a URL starting with http or https</li>
-<li>Communities: Optional.  Hold down &#8220;Control&#8221;, or &#8220;Command&#8221; on a Mac, to select more than one.</li>
-<li>Position: Optional.</li>
-<li>User: Optional.</li>
-<li>Is ignite: Optional.</li>
-<li>Is featured: Optional.</li>
-<li>Notes: Optional.</li>
-<li>Tags: Optional. A comma-separated list of tags.</li>
-</ul>
-<p>These Events are created so ...</p>
-<a class="reference internal image-reference" href="_images/admin--events--event--add.png"><img alt="_images/admin--events--event--add.png" src="_images/admin--events--event--add.png" style="width: 100%;" /></a>
-</div>
-<div class="section" id="unpublishing-removing-events">
-<h2>Unpublishing / Removing  Events<a class="headerlink" href="#unpublishing-removing-events" title="Permalink to this headline">¶</a></h2>
-<p>In case Events needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Events to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The Events can be browsed in the <tt class="docutils literal"><span class="pre">/admin/events/event/</span></tt> URL.</p>
-</div>
 </div>
 </div>
 
@@ -132,17 +132,22 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">events admin section</a><ul>
-<li><a class="reference internal" href="#view-existing-audiences">View existing Audiences</a></li>
-<li><a class="reference internal" href="#adding-audiences">Adding Audiences</a></li>
-<li><a class="reference internal" href="#unpublishing-removing-audiences">Unpublishing / Removing  Audiences</a></li>
+<li><a class="reference internal" href="#">Events admin section</a><ul>
 <li><a class="reference internal" href="#view-existing-events">View existing Events</a></li>
 <li><a class="reference internal" href="#adding-events">Adding Events</a></li>
 <li><a class="reference internal" href="#unpublishing-removing-events">Unpublishing / Removing  Events</a></li>
+<li><a class="reference internal" href="#view-existing-audiences">View existing Audiences</a></li>
+<li><a class="reference internal" href="#adding-audiences">Adding Audiences</a></li>
 </ul>
 </li>
 </ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_awards.html"
+                        title="previous chapter">Admin awards</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/admin_events.txt"
@@ -171,6 +176,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_awards.html" title="Admin awards"
+             >previous</a> |</li>
         <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
       </ul>
     </div>
