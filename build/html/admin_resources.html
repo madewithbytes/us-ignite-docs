@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Resources admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Organizations admin section" href="admin_organizations.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_organizations.html" title="Organizations admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="resources-admin-section">
+<h1>Resources admin section<a class="headerlink" href="#resources-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">resources</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-resources">
+<h2>View existing Resources<a class="headerlink" href="#view-existing-resources" title="Permalink to this headline">¶</a></h2>
+<p>The resources can be videos, links or downloadable assets fror the registered members of US Ignite.</p>
+<p>The existing Resources are listed in the <tt class="docutils literal"><span class="pre">/admin/resources/resource/</span></tt> URL. From this section the details of these Resources can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Resources.</li>
+<li>Filter the Resources by: is featured?, creation date.</li>
+<li>Search the Resources by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--resources--resource.png"><img alt="_images/admin--resources--resource.png" src="_images/admin--resources--resource.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-resources">
+<h2>Adding Resources<a class="headerlink" href="#adding-resources" title="Permalink to this headline">¶</a></h2>
+<p>Adding Resources can be done from the front end of the application or the admins can do it via the <tt class="docutils literal"><span class="pre">/admin/resources/resource/add/</span></tt> URL.</p>
+<p>The following fields are available to create Resources:</p>
+<ul class="simple">
+<li>Name of resource: Required. Name of the resource.</li>
+<li>Slug: Optional. Slug used for the URL in the site. Must be unique.</li>
+<li>Status: Required. Publication status of the resourc ein the site.</li>
+<li>URL: Optional. Fully qualified URL if the resource is hosted outside the site.</li>
+<li>Description: Required. Description of the resource of the site.</li>
+<li>Resource type: Optional. Type of the resource.</li>
+<li>Sector: Optional. Domain for where this resource is more relevant.</li>
+<li>Contact: Optional. User to be contacted about this resource.</li>
+<li>Author: Optional. Primary Author/Presenter (if different from contact)</li>
+<li>Organization: Optional. Organization associated to this resource.</li>
+<li>Image: Optional. Image descriptive of this resource. Suggested size: 500x400px.</li>
+<li>Asset: Optional. Download associated to this resource.</li>
+<li>Resource date: Optional. Date of this resource.</li>
+<li>Is featured: Optional. Determines if this resource should be listed as featured.</li>
+<li>Show in the homepage?: Optional. If marked this element will be shown in the homepage.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only the latest the featured items will be shown. Make sure elements that are not required to be featured are marked as non-featured.</p>
+</div>
+<a class="reference internal image-reference" href="_images/admin--resources--resource--add.png"><img alt="_images/admin--resources--resource--add.png" src="_images/admin--resources--resource--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-resources">
+<h2>Unpublishing / Removing  Resources<a class="headerlink" href="#unpublishing-removing-resources" title="Permalink to this headline">¶</a></h2>
+<p>In case Resources needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Resources to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Resources can be browsed in the <tt class="docutils literal"><span class="pre">/admin/resources/resource/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-resource-types">
+<h2>View existing Resource Types<a class="headerlink" href="#view-existing-resource-types" title="Permalink to this headline">¶</a></h2>
+<p>The existing Resource Types can be listed in the <tt class="docutils literal"><span class="pre">/admin/resources/resourcetype/</span></tt> URL. From this section the details of these Resource Types can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Resource Types.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--resources--resourcetype.png"><img alt="_images/admin--resources--resourcetype.png" src="_images/admin--resources--resourcetype.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-resource-types">
+<h2>Adding Resource Types<a class="headerlink" href="#adding-resource-types" title="Permalink to this headline">¶</a></h2>
+<p>Resource types are used to classify the existing resources.</p>
+<p>Adding Resource Types can be done from the <tt class="docutils literal"><span class="pre">/admin/resources/resourcetype/add/</span></tt> URL.</p>
+<p>The following fields are available to create Resource Types:</p>
+<ul class="simple">
+<li>Name: Required. Name used in the resource.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--resources--resourcetype--add.png"><img alt="_images/admin--resources--resourcetype--add.png" src="_images/admin--resources--resourcetype--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="removing-resource-types">
+<h2>Removing Resource Types<a class="headerlink" href="#removing-resource-types" title="Permalink to this headline">¶</a></h2>
+<p>In case Resource Types need removal it can be done by clicking the <tt class="docutils literal"><span class="pre">delete</span></tt> button in the detail page of the resource type.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Resource Types can be browsed in the <tt class="docutils literal"><span class="pre">/admin/resources/resourcetype/</span></tt> URL.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The removal of a resource type is permanent and will remove the association from any existing resource.</p>
+</div>
+</div>
+<div class="section" id="view-existing-sectors">
+<h2>View existing Sectors<a class="headerlink" href="#view-existing-sectors" title="Permalink to this headline">¶</a></h2>
+<p>The sectors describe the domains where the resources could be more useful to.</p>
+<p>The existing Sectors can be listed in the <tt class="docutils literal"><span class="pre">/admin/resources/sector/</span></tt> URL. From this section the details of these Sectors can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Sectors.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--resources--sector.png"><img alt="_images/admin--resources--sector.png" src="_images/admin--resources--sector.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-sectors">
+<h2>Adding Sectors<a class="headerlink" href="#adding-sectors" title="Permalink to this headline">¶</a></h2>
+<p>Adding Sectors can be done from the <tt class="docutils literal"><span class="pre">/admin/resources/sector/add/</span></tt> URL.</p>
+<p>The following fields are available to create Sectors:</p>
+<ul class="simple">
+<li>Name: Required. Name of the sector.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--resources--sector--add.png"><img alt="_images/admin--resources--sector--add.png" src="_images/admin--resources--sector--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="removing-sectors">
+<h2>Removing Sectors<a class="headerlink" href="#removing-sectors" title="Permalink to this headline">¶</a></h2>
+<p>In case Sectors need removal it can be done by clicking the <tt class="docutils literal"><span class="pre">delete</span></tt> button in the detail page of the resource type.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Sectors can be browsed in the <tt class="docutils literal"><span class="pre">/admin/resources/sector/</span></tt> URL.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The removal of a Sector is permanent and will remove the association from any existing resource.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Resources admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-resources">View existing Resources</a></li>
+<li><a class="reference internal" href="#adding-resources">Adding Resources</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-resources">Unpublishing / Removing  Resources</a></li>
+<li><a class="reference internal" href="#view-existing-resource-types">View existing Resource Types</a></li>
+<li><a class="reference internal" href="#adding-resource-types">Adding Resource Types</a></li>
+<li><a class="reference internal" href="#removing-resource-types">Removing Resource Types</a></li>
+<li><a class="reference internal" href="#view-existing-sectors">View existing Sectors</a></li>
+<li><a class="reference internal" href="#adding-sectors">Adding Sectors</a></li>
+<li><a class="reference internal" href="#removing-sectors">Removing Sectors</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_organizations.html"
+                        title="previous chapter">Organizations admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_resources.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_organizations.html" title="Organizations admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

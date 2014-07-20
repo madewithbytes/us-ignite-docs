@@ -23,6 +23,7 @@ Contents:
    admin_hubs
    admin_maps
    admin_organizations
+   admin_resources
    bootstrap
    architecture
    commands
