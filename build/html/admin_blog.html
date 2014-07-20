@@ -53,9 +53,8 @@
 <h1>Blog admin section<a class="headerlink" href="#blog-admin-section" title="Permalink to this headline">¶</a></h1>
 <p>This section list the <tt class="docutils literal"><span class="pre">blog</span></tt> section and its usage in the site. The blog section manages directly the blog posts that appear in the site.</p>
 <p>Although these blog posts are imported from the heroku wordpress instance which is used to generate the content providing a familiar interface to US Ignite.</p>
-</div>
 <div class="section" id="view-existing-posts">
-<h1>View existing Posts<a class="headerlink" href="#view-existing-posts" title="Permalink to this headline">¶</a></h1>
+<h2>View existing Posts<a class="headerlink" href="#view-existing-posts" title="Permalink to this headline">¶</a></h2>
 <p>The existing Posts can be listed in the <tt class="docutils literal"><span class="pre">/admin/blog/post/</span></tt> URL. From this section the details of these Posts can be inspected.</p>
 <p>And the following actions can be performed:</p>
 <ul class="simple">
@@ -66,7 +65,7 @@
 <a class="reference internal image-reference" href="_images/admin--blog--post.png"><img alt="_images/admin--blog--post.png" src="_images/admin--blog--post.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="adding-posts">
-<h1>Adding Posts<a class="headerlink" href="#adding-posts" title="Permalink to this headline">¶</a></h1>
+<h2>Adding Posts<a class="headerlink" href="#adding-posts" title="Permalink to this headline">¶</a></h2>
 <p>Adding posts <strong>must</strong> be  done from the heroku wordpress instance.</p>
 <p>Once the a Post has have been published in wordpress they are made available via an HTTP API to the the site. The site checks at regular intervals if there is any new blog posts available.</p>
 <p>Once the site finds a new blog posts that needs to be imported it populate the right fields in the site and makes it available.</p>
@@ -77,7 +76,7 @@
 </div>
 </div>
 <div class="section" id="editing-posts">
-<h1>Editing Posts<a class="headerlink" href="#editing-posts" title="Permalink to this headline">¶</a></h1>
+<h2>Editing Posts<a class="headerlink" href="#editing-posts" title="Permalink to this headline">¶</a></h2>
 <p>This section is used to edit imported Posts. The detail URL of a blog post is available from list blog posts section:<tt class="docutils literal"><span class="pre">/admin/blog/post/</span></tt>.</p>
 <p>The following fields are available in the Posts:</p>
 <ul class="simple">
@@ -102,7 +101,7 @@
 <a class="reference internal image-reference" href="_images/admin--blog--post--add.png"><img alt="_images/admin--blog--post--add.png" src="_images/admin--blog--post--add.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="unpublishing-removing-posts">
-<h1>Unpublishing / Removing  Posts<a class="headerlink" href="#unpublishing-removing-posts" title="Permalink to this headline">¶</a></h1>
+<h2>Unpublishing / Removing  Posts<a class="headerlink" href="#unpublishing-removing-posts" title="Permalink to this headline">¶</a></h2>
 <p>In case Posts needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Posts to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -110,7 +109,7 @@
 </div>
 </div>
 <div class="section" id="view-existing-blog-links">
-<h1>View existing Blog Links<a class="headerlink" href="#view-existing-blog-links" title="Permalink to this headline">¶</a></h1>
+<h2>View existing Blog Links<a class="headerlink" href="#view-existing-blog-links" title="Permalink to this headline">¶</a></h2>
 <p>The blog links is a list of links that appear in the sidebar of the Blog section.</p>
 <p>The existing Blog Links can be listed in the <tt class="docutils literal"><span class="pre">/admin/blog/bloglink/</span></tt> URL. From this section the details of these Blog Links can be inspected.</p>
 <p>And the following actions can be performed:</p>
@@ -122,7 +121,7 @@
 <a class="reference internal image-reference" href="_images/admin--blog--bloglink.png"><img alt="_images/admin--blog--bloglink.png" src="_images/admin--blog--bloglink.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="adding-blog-links">
-<h1>Adding Blog Links<a class="headerlink" href="#adding-blog-links" title="Permalink to this headline">¶</a></h1>
+<h2>Adding Blog Links<a class="headerlink" href="#adding-blog-links" title="Permalink to this headline">¶</a></h2>
 <p>Adding Blog Links can be done from the <tt class="docutils literal"><span class="pre">/admin/blog/bloglink/add/</span></tt> URL.</p>
 <p>The following fields are available to create Blog Links:
 - Name: Required. Name to be used in the link.
@@ -131,11 +130,12 @@
 <a class="reference internal image-reference" href="_images/admin--blog--bloglink--add.png"><img alt="_images/admin--blog--bloglink--add.png" src="_images/admin--blog--bloglink--add.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="removing-blog-links">
-<h1>Removing Blog Links<a class="headerlink" href="#removing-blog-links" title="Permalink to this headline">¶</a></h1>
+<h2>Removing Blog Links<a class="headerlink" href="#removing-blog-links" title="Permalink to this headline">¶</a></h2>
 <p>In case a Blog Links needs removing it can be done using the <tt class="docutils literal"><span class="pre">delete</span></tt> button in the detail page.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The Blog Links can be browsed in the <tt class="docutils literal"><span class="pre">/admin/blog/bloglink/</span></tt> URL.</p>
+</div>
 </div>
 </div>
 
@@ -147,7 +147,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Blog admin section</a></li>
+<li><a class="reference internal" href="#">Blog admin section</a><ul>
 <li><a class="reference internal" href="#view-existing-posts">View existing Posts</a></li>
 <li><a class="reference internal" href="#adding-posts">Adding Posts</a></li>
 <li><a class="reference internal" href="#editing-posts">Editing Posts</a></li>
@@ -155,6 +155,8 @@
 <li><a class="reference internal" href="#view-existing-blog-links">View existing Blog Links</a></li>
 <li><a class="reference internal" href="#adding-blog-links">Adding Blog Links</a></li>
 <li><a class="reference internal" href="#removing-blog-links">Removing Blog Links</a></li>
+</ul>
+</li>
 </ul>
 
   <h4>Previous topic</h4>

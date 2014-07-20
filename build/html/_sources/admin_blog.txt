@@ -1,5 +1,5 @@
 Blog admin section
-------------------
+==================
 
 This section list the ``blog`` section and its usage in the site. The blog section manages directly the blog posts that appear in the site.
 
