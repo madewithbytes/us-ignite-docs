@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Maps admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Communities admin section" href="admin_hubs.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_hubs.html" title="Communities admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="maps-admin-section">
+<h1>Maps admin section<a class="headerlink" href="#maps-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">maps</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-locations">
+<h2>View existing Locations<a class="headerlink" href="#view-existing-locations" title="Permalink to this headline">¶</a></h2>
+<p>Location of the items that appear in the map.</p>
+<p>The existing Locations can be listed in the <tt class="docutils literal"><span class="pre">/admin/maps/location/</span></tt> URL. From this section the details of these Locations can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Locations.</li>
+<li>Filter the Locations by: status or category.</li>
+<li>Search the Locations by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--maps--location.png"><img alt="_images/admin--maps--location.png" src="_images/admin--maps--location.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-locations">
+<h2>Adding Locations<a class="headerlink" href="#adding-locations" title="Permalink to this headline">¶</a></h2>
+<p>Adding Locations can be done from the <tt class="docutils literal"><span class="pre">/admin/maps/location/add/</span></tt> URL.</p>
+<p>The following fields are available to create Locations:</p>
+<ul class="simple">
+<li>Name: Required. Name of the location.</li>
+<li>Website: Optional. Fully qualified URL to be used for this location.</li>
+<li>Image: Optional. Icon to be used for this location in the map.</li>
+<li>Status: Required. Publication status of the location.</li>
+<li>Position: Optional. Position of the location in a map.</li>
+<li>Category: Required. Category used for this location.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--maps--location--add.png"><img alt="_images/admin--maps--location--add.png" src="_images/admin--maps--location--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-locations">
+<h2>Unpublishing / Removing  Locations<a class="headerlink" href="#unpublishing-removing-locations" title="Permalink to this headline">¶</a></h2>
+<p>In case Locations needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Locations to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Locations can be browsed in the <tt class="docutils literal"><span class="pre">/admin/maps/location/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-categories">
+<h2>View existing Categories<a class="headerlink" href="#view-existing-categories" title="Permalink to this headline">¶</a></h2>
+<p>These are the categories used for the elements that appear in the map.</p>
+<p>The existing Categories can be listed in the <tt class="docutils literal"><span class="pre">/admin/maps/category/</span></tt> URL. From this section the details of these Categories can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Categories.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--maps--category.png"><img alt="_images/admin--maps--category.png" src="_images/admin--maps--category.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-categories">
+<h2>Adding Categories<a class="headerlink" href="#adding-categories" title="Permalink to this headline">¶</a></h2>
+<p>Adding Categories can be done from the <tt class="docutils literal"><span class="pre">/admin/maps/category/add/</span></tt> URL.</p>
+<p>The following fields are available to create Categories:</p>
+<ul class="simple">
+<li>Name: Required. Name of the category.</li>
+<li>Slug: Required. Slug used for this category, must be unique.</li>
+<li>Image: Optional. Image used as an icon for the map on this category.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--maps--category--add.png"><img alt="_images/admin--maps--category--add.png" src="_images/admin--maps--category--add.png" style="width: 100%;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Maps admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-locations">View existing Locations</a></li>
+<li><a class="reference internal" href="#adding-locations">Adding Locations</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-locations">Unpublishing / Removing  Locations</a></li>
+<li><a class="reference internal" href="#view-existing-categories">View existing Categories</a></li>
+<li><a class="reference internal" href="#adding-categories">Adding Categories</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_hubs.html"
+                        title="previous chapter">Communities admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_maps.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_hubs.html" title="Communities admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

@@ -19,6 +19,7 @@ Contents:
    admin_awards
    admin_events
    admin_hubs
+   admin_maps
    bootstrap
    architecture
    commands
