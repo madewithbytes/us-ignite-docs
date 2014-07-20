@@ -25,6 +25,7 @@ Contents:
    admin_organizations
    admin_resources
    admin_sections
+   admin_snippets
    bootstrap
    architecture
    commands

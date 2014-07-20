@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Snippets admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Sections admin section" href="admin_sections.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_sections.html" title="Sections admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="snippets-admin-section">
+<h1>Snippets admin section<a class="headerlink" href="#snippets-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">snippets</span></tt> section and its usage in the site. The snippets are used across the site to render small dynamic blocks of HTML.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The snippets are used in conjunction with the templates of the site. They rely on an unique key to determine where they should be rendered, if they are not implemented in the templates they are unusable.</p>
+</div>
+<div class="section" id="view-existing-snippets">
+<h2>View existing Snippets<a class="headerlink" href="#view-existing-snippets" title="Permalink to this headline">¶</a></h2>
+<p>The existing Snippets can be listed in the <tt class="docutils literal"><span class="pre">/admin/snippets/snippet/</span></tt> URL. From this section the details of these Snippets can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Snippets.</li>
+<li>Filter the Snippets by: status, is featured?, creation date.</li>
+<li>Search the Snippets by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--snippets--snippet.png"><img alt="_images/admin--snippets--snippet.png" src="_images/admin--snippets--snippet.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-snippets">
+<h2>Adding Snippets<a class="headerlink" href="#adding-snippets" title="Permalink to this headline">¶</a></h2>
+<p>Adding Snippets can be done from the <tt class="docutils literal"><span class="pre">/admin/snippets/snippet/add/</span></tt> URL.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The snippets are used in conjunction with the templates of the site. They rely on an unique key to determine where they should be rendered, if they are not implemented in the templates they are unusable.</p>
+</div>
+</div>
+<div class="section" id="editing-existing-snippets">
+<h2>Editing existing Snippets<a class="headerlink" href="#editing-existing-snippets" title="Permalink to this headline">¶</a></h2>
+<p>The following fields are available to create Snippets:</p>
+<ul class="simple">
+<li>Name: Required. Name of the snippet.</li>
+<li>Status: Required. Publication status of the snippet.</li>
+<li>Slug: Required. Keyword used to render this snippet of content.</li>
+<li>Body: Optional. HTML content of the snippet.</li>
+<li>URL: Optional. URL to link the snippet.</li>
+<li>URL text: Optional. Text to be used in conjunction with the URL</li>
+<li>Image: Optional. Image to acompany the content.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--snippets--snippet--add.png"><img alt="_images/admin--snippets--snippet--add.png" src="_images/admin--snippets--snippet--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="snippet-profile-welcome">
+<h2>Snippet: profile-welcome<a class="headerlink" href="#snippet-profile-welcome" title="Permalink to this headline">¶</a></h2>
+<p>Text only used to welcome users when they login and access their profiles.</p>
+<a class="reference internal image-reference" href="_images/dashboard.png"><img alt="_images/dashboard.png" src="_images/dashboard.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="snippet-blog-sidebar">
+<h2>Snippet: blog-sidebar<a class="headerlink" href="#snippet-blog-sidebar" title="Permalink to this headline">¶</a></h2>
+<p>Featured box in the right handside of the blog to list featured content.</p>
+<a class="reference internal image-reference" href="_images/blog.png"><img alt="_images/blog.png" src="_images/blog.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="snippet-welcome-email">
+<h2>Snippet: welcome-email<a class="headerlink" href="#snippet-welcome-email" title="Permalink to this headline">¶</a></h2>
+<p>Text used to send the welcome email to the users.</p>
+</div>
+<div class="section" id="snippet-home-box">
+<h2>Snippet: home-box<a class="headerlink" href="#snippet-home-box" title="Permalink to this headline">¶</a></h2>
+<p>Featured snippet for the box above the fold in the homepage.</p>
+<a class="reference internal image-reference" href="_images/home.png"><img alt="_images/home.png" src="_images/home.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="snippet-featured">
+<h2>Snippet: featured<a class="headerlink" href="#snippet-featured" title="Permalink to this headline">¶</a></h2>
+<p>Featured snippet for the orange box in the homepage next to: developers, partners and community leaders.</p>
+<a class="reference internal image-reference" href="_images/home.png"><img alt="_images/home.png" src="_images/home.png" style="width: 100%;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Snippets admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-snippets">View existing Snippets</a></li>
+<li><a class="reference internal" href="#adding-snippets">Adding Snippets</a></li>
+<li><a class="reference internal" href="#editing-existing-snippets">Editing existing Snippets</a></li>
+<li><a class="reference internal" href="#snippet-profile-welcome">Snippet: profile-welcome</a></li>
+<li><a class="reference internal" href="#snippet-blog-sidebar">Snippet: blog-sidebar</a></li>
+<li><a class="reference internal" href="#snippet-welcome-email">Snippet: welcome-email</a></li>
+<li><a class="reference internal" href="#snippet-home-box">Snippet: home-box</a></li>
+<li><a class="reference internal" href="#snippet-featured">Snippet: featured</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_sections.html"
+                        title="previous chapter">Sections admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_snippets.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_sections.html" title="Sections admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
