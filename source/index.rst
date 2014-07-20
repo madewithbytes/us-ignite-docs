@@ -26,6 +26,7 @@ Contents:
    admin_resources
    admin_sections
    admin_snippets
+   admin_taggit
    bootstrap
    architecture
    commands
