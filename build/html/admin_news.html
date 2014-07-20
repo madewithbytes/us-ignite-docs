@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>News admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Apps admin section" href="admin_apps.html" />
+    <link rel="prev" title="Blog admin section" href="admin_blog.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="admin_apps.html" title="Apps admin section"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_blog.html" title="Blog admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="news-admin-section">
+<h1>News admin section<a class="headerlink" href="#news-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">news</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-articles">
+<h2>View existing Articles<a class="headerlink" href="#view-existing-articles" title="Permalink to this headline">¶</a></h2>
+<p>The news articles are shown in the sidebar of the <tt class="docutils literal"><span class="pre">Blog</span></tt>, only the latest created articles are shown.</p>
+<p>The existing Articles are listed in the <tt class="docutils literal"><span class="pre">/admin/news/article/</span></tt> URL. From this section the details of these Articles can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Articles.</li>
+<li>Filter the Articles by: status, is featured? or creation date.</li>
+<li>Search the Articles by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--news--article.png"><img alt="_images/admin--news--article.png" src="_images/admin--news--article.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-articles">
+<h2>Adding Articles<a class="headerlink" href="#adding-articles" title="Permalink to this headline">¶</a></h2>
+<p>Adding Articles can be done from the <tt class="docutils literal"><span class="pre">/admin/news/article/add/</span></tt> URL.</p>
+<p>The following fields are available to create Articles:</p>
+<ul class="simple">
+<li>Name: Required. Text used for the link.</li>
+<li>Status: Required. Publication status of the article.</li>
+<li>URL: Required. Fully qualified URL to link the article.</li>
+<li>Is featured: Optional. Determines if the article is featured.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--news--article--add.png"><img alt="_images/admin--news--article--add.png" src="_images/admin--news--article--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-articles">
+<h2>Unpublishing / Removing  Articles<a class="headerlink" href="#unpublishing-removing-articles" title="Permalink to this headline">¶</a></h2>
+<p>In case Articles needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Articles to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Articles can be browsed in the <tt class="docutils literal"><span class="pre">/admin/news/article/</span></tt> URL.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">News admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-articles">View existing Articles</a></li>
+<li><a class="reference internal" href="#adding-articles">Adding Articles</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-articles">Unpublishing / Removing  Articles</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_blog.html"
+                        title="previous chapter">Blog admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="admin_apps.html"
+                        title="next chapter">Apps admin section</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_news.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="admin_apps.html" title="Apps admin section"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_blog.html" title="Blog admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
