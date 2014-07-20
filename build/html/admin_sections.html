@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sections admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
+    <link rel="prev" title="Resources admin section" href="admin_resources.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_resources.html" title="Resources admin section"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sections-admin-section">
+<h1>Sections admin section<a class="headerlink" href="#sections-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">sections</span></tt> section and its usage in the site.</p>
+<div class="section" id="view-existing-section-pages">
+<h2>View existing Section Pages<a class="headerlink" href="#view-existing-section-pages" title="Permalink to this headline">¶</a></h2>
+<p>The section pages are dynamic pages that appear in the &#8220;about&#8221; or &#8220;get involved&#8221; sections.</p>
+<p>The existing Section Pages can be listed in the <tt class="docutils literal"><span class="pre">/admin/sections/sectionpage/</span></tt> URL. From this section the details of these Section Pages can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Section Pages.</li>
+<li>Filter the Section Pages by: status or section.</li>
+<li>Search the Section Pages by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--sections--sectionpage.png"><img alt="_images/admin--sections--sectionpage.png" src="_images/admin--sections--sectionpage.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-section-pages">
+<h2>Adding Section Pages<a class="headerlink" href="#adding-section-pages" title="Permalink to this headline">¶</a></h2>
+<p>The section pages are dynamic pages that appear in the &#8220;about&#8221; or &#8220;get involved&#8221; sections.</p>
+<p>Adding Section Pages can be done from the <tt class="docutils literal"><span class="pre">/admin/sections/sectionpage/add/</span></tt> URL.</p>
+<p>The following fields are available to create Section Pages:</p>
+<ul class="simple">
+<li>Title: Required. Name of the page.</li>
+<li>Body: Optional. HTML content of the page.</li>
+<li>Status: Required. Publication status of the page.</li>
+<li>Section: Required. Section where this page will appear.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">An what you see is what you get editor has been added to add content to the pages.</p>
+</div>
+<a class="reference internal image-reference" href="_images/admin--sections--sectionpage--add.png"><img alt="_images/admin--sections--sectionpage--add.png" src="_images/admin--sections--sectionpage--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-section-pages">
+<h2>Unpublishing / Removing  Section Pages<a class="headerlink" href="#unpublishing-removing-section-pages" title="Permalink to this headline">¶</a></h2>
+<p>In case Section Pages needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Section Pages to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Section Pages can be browsed in the <tt class="docutils literal"><span class="pre">/admin/sections/sectionpage/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-sponsors">
+<h2>View existing Sponsors<a class="headerlink" href="#view-existing-sponsors" title="Permalink to this headline">¶</a></h2>
+<p>Sponsors are the organizations listed in the footer.</p>
+<p>The existing Sponsors can be listed in the <tt class="docutils literal"><span class="pre">/admin/sections/sponsor/</span></tt> URL. From this section the details of these Sponsors can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Sponsors.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--sections--sponsor.png"><img alt="_images/admin--sections--sponsor.png" src="_images/admin--sections--sponsor.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-sponsors">
+<h2>Adding Sponsors<a class="headerlink" href="#adding-sponsors" title="Permalink to this headline">¶</a></h2>
+<p>Sponsors are the organizations listed in the footer.</p>
+<p>Adding Sponsors can be done from the <tt class="docutils literal"><span class="pre">/admin/sections/sponsor/add/</span></tt> URL.</p>
+<p>The following fields are available to create Sponsors:</p>
+<ul class="simple">
+<li>Name: Required. Name of the organization.</li>
+<li>Website: Required. URL of the organization.</li>
+<li>Image: Required. Image to be used in the footer to represent the organization.</li>
+<li>Order: Required. Order for the organization to appear.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--sections--sponsor--add.png"><img alt="_images/admin--sections--sponsor--add.png" src="_images/admin--sections--sponsor--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="removing-sponsors">
+<h2>Removing  Sponsors<a class="headerlink" href="#removing-sponsors" title="Permalink to this headline">¶</a></h2>
+<p>In case Sponsors needs to be removed clicking on the <tt class="docutils literal"><span class="pre">delete</span></tt> button of the detail page will inmediately remove it from the footer.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Sponsors can be browsed in the <tt class="docutils literal"><span class="pre">/admin/sections/sponsor/</span></tt> URL.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sections admin section</a><ul>
+<li><a class="reference internal" href="#view-existing-section-pages">View existing Section Pages</a></li>
+<li><a class="reference internal" href="#adding-section-pages">Adding Section Pages</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-section-pages">Unpublishing / Removing  Section Pages</a></li>
+<li><a class="reference internal" href="#view-existing-sponsors">View existing Sponsors</a></li>
+<li><a class="reference internal" href="#adding-sponsors">Adding Sponsors</a></li>
+<li><a class="reference internal" href="#removing-sponsors">Removing  Sponsors</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_resources.html"
+                        title="previous chapter">Resources admin section</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bootstrap.html"
+                        title="next chapter">Bootstraping the application</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_sections.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bootstrap.html" title="Bootstraping the application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_resources.html" title="Resources admin section"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

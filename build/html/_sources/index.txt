@@ -24,6 +24,7 @@ Contents:
    admin_maps
    admin_organizations
    admin_resources
+   admin_sections
    bootstrap
    architecture
    commands
