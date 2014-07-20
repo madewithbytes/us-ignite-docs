@@ -13,6 +13,7 @@ Contents:
 
    admin
    admin_users
+   admin_profiles
    admin_blog
    admin_news
    admin_apps

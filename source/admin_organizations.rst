@@ -66,4 +66,3 @@ Removing members of the organizations can be done from the detail view by select
 
 .. note::
    The Organizations can be browsed in the ``/admin/organizations/organization/`` URL.
-
