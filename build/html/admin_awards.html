@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
     <link rel="next" title="Bootstraping the application" href="bootstrap.html" />
-    <link rel="prev" title="Admin applications" href="admin_apps.html" /> 
+    <link rel="prev" title="Challenges admin section" href="admin_challenges.html" /> 
   </head>
   <body>
     <div class="related">
@@ -38,7 +38,7 @@
           <a href="bootstrap.html" title="Bootstraping the application"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="admin_apps.html" title="Admin applications"
+          <a href="admin_challenges.html" title="Challenges admin section"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
       </ul>
@@ -51,30 +51,34 @@
             
   <div class="section" id="admin-awards">
 <h1>Admin awards<a class="headerlink" href="#admin-awards" title="Permalink to this headline">¶</a></h1>
-<p>This section list the <tt class="docutils literal"><span class="pre">awards</span></tt> and awards mechanics of the site.</p>
+<p>This section list the <tt class="docutils literal"><span class="pre">awards</span></tt> section and its usage in the site.</p>
 <p>The process to give an award is:</p>
 <ul class="simple">
 <li>Create an award (with or without imagery).</li>
 <li>Give the award to an application, community, or user.</li>
 </ul>
-<div class="section" id="view-existing-awards">
-<h2>View existing awards<a class="headerlink" href="#view-existing-awards" title="Permalink to this headline">¶</a></h2>
-<p>The existing awards can be seen in the <tt class="docutils literal"><span class="pre">/admin/awards/award/</span></tt> section. From this section the details of these awards can be inspected.</p>
-<a class="reference internal image-reference" href="_images/admin--awards--award.png"><img alt="_images/admin--awards--award.png" src="_images/admin--awards--award.png" style="width: 100%;" /></a>
-</div>
-<div class="section" id="add-an-award">
-<h2>Add an award<a class="headerlink" href="#add-an-award" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-awards">
+<h2>Adding Awards<a class="headerlink" href="#adding-awards" title="Permalink to this headline">¶</a></h2>
 <p>The awards can be added in the <tt class="docutils literal"><span class="pre">/admin/awards/award/add/</span></tt> section. The following vields can be created:</p>
 <ul class="simple">
-<li>Name. Required. Name of the award.</li>
-<li>Image. Optional. Imagery used to display the award.</li>
-<li>Description. Optional. Used to describe the award.</li>
+<li>Name: Required. Name of the award.</li>
+<li>Image: Optional. Imagery used to display the award.</li>
+<li>Description: Optional. Used to describe the award.</li>
 </ul>
 <p>These awards are created so they can be assigned to an application, community, or user at a later point.</p>
 <a class="reference internal image-reference" href="_images/admin--awards--award--add.png"><img alt="_images/admin--awards--award--add.png" src="_images/admin--awards--award--add.png" style="width: 100%;" /></a>
 </div>
+<div class="section" id="view-existing-awards">
+<h2>View existing Awards<a class="headerlink" href="#view-existing-awards" title="Permalink to this headline">¶</a></h2>
+<p>The existing Hub Awards can be listed in the <tt class="docutils literal"><span class="pre">/admin/awards/hubaward/</span></tt> URL. From this section the details of these Hub Awards can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Awards.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--awards--award.png"><img alt="_images/admin--awards--award.png" src="_images/admin--awards--award.png" style="width: 100%;" /></a>
+</div>
 <div class="section" id="give-an-award-to-an-application">
-<h2>Give an award to an application<a class="headerlink" href="#give-an-award-to-an-application" title="Permalink to this headline">¶</a></h2>
+<h2>Give an award to an Application<a class="headerlink" href="#give-an-award-to-an-application" title="Permalink to this headline">¶</a></h2>
 <p>The awards can be given to an application in the <tt class="docutils literal"><span class="pre">/admin/awards/applicationaward/add/</span></tt> section.</p>
 <p>Here an award and an application can be selected. The magnifying glass icon will pop up a window to select the awarded application.</p>
 <p>To select the award clicking on the name of the application will close the pop-up window and add the id of the application to the form.</p>
@@ -85,11 +89,51 @@
 <p>The award will be published as soon as the <tt class="docutils literal"><span class="pre">save</span></tt> button is pressed.</p>
 <a class="reference internal image-reference" href="_images/admin--awards--applicationaward--add.png"><img alt="_images/admin--awards--applicationaward--add.png" src="_images/admin--awards--applicationaward--add.png" style="width: 100%;" /></a>
 </div>
+<div class="section" id="view-existing-application-awards">
+<h2>View existing Application Awards<a class="headerlink" href="#view-existing-application-awards" title="Permalink to this headline">¶</a></h2>
+<p>The existing Application Awards can be listed in the <tt class="docutils literal"><span class="pre">/admin/awards/applicationaward/</span></tt> URL. From this section the details of the Application Awards can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Application Awards.</li>
+<li>Filter the Application Awards by: Award Name.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--awards--applicationaward.png"><img alt="_images/admin--awards--applicationaward.png" src="_images/admin--awards--applicationaward.png" style="width: 100%;" /></a>
+</div>
 <div class="section" id="give-an-award-to-a-community">
-<h2>Give an award to a community<a class="headerlink" href="#give-an-award-to-a-community" title="Permalink to this headline">¶</a></h2>
+<h2>Give an Award to a Community<a class="headerlink" href="#give-an-award-to-a-community" title="Permalink to this headline">¶</a></h2>
+<p>The awards can be given to Communities in the <tt class="docutils literal"><span class="pre">/admin/awards/hubaward/add/</span></tt> section.</p>
+<p>Here an Award and an Community can be selected. The award will be published as soon as the <tt class="docutils literal"><span class="pre">save</span></tt> button is pressed.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The searching form to filter the Communities by content will be available from the pop up window.</p>
+</div>
+<a class="reference internal image-reference" href="_images/admin--awards--hubaward--add.png"><img alt="_images/admin--awards--hubaward--add.png" src="_images/admin--awards--hubaward--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="view-existing-community-awards">
+<h2>View existing Community Awards<a class="headerlink" href="#view-existing-community-awards" title="Permalink to this headline">¶</a></h2>
+<p>The existing Community Awards can be listed in the <tt class="docutils literal"><span class="pre">/admin/awards/hubaward/</span></tt> URL. From this section the details of the Community Awards can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Hub Awards.</li>
+<li>Filter the Hub Awards by: Award Name.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--awards--hubaward.png"><img alt="_images/admin--awards--hubaward.png" src="_images/admin--awards--hubaward.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="give-an-award-to-a-user">
-<h2>Give an award to a user<a class="headerlink" href="#give-an-award-to-a-user" title="Permalink to this headline">¶</a></h2>
+<h2>Give an Award to a User<a class="headerlink" href="#give-an-award-to-a-user" title="Permalink to this headline">¶</a></h2>
+<p>The Awards can be given to Users in the <tt class="docutils literal"><span class="pre">/admin/awards/useraward/add/</span></tt> URL.</p>
+<p>Here an Award and a User can be selected. The award will be published as soon as the <tt class="docutils literal"><span class="pre">save</span></tt> button is pressed.</p>
+<a class="reference internal image-reference" href="_images/admin--awards--useraward--add.png"><img alt="_images/admin--awards--useraward--add.png" src="_images/admin--awards--useraward--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="view-existing-user-awards">
+<h2>View existing User Awards<a class="headerlink" href="#view-existing-user-awards" title="Permalink to this headline">¶</a></h2>
+<p>The existing User Awards can be listed in the <tt class="docutils literal"><span class="pre">/admin/awards/useraward/</span></tt> URL. From this section the details of the User Awards can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the User Awards.</li>
+<li>Filter the User Awards by: Award name.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--awards--useraward.png"><img alt="_images/admin--awards--useraward.png" src="_images/admin--awards--useraward.png" style="width: 100%;" /></a>
 </div>
 </div>
 
@@ -102,18 +146,21 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Admin awards</a><ul>
-<li><a class="reference internal" href="#view-existing-awards">View existing awards</a></li>
-<li><a class="reference internal" href="#add-an-award">Add an award</a></li>
-<li><a class="reference internal" href="#give-an-award-to-an-application">Give an award to an application</a></li>
-<li><a class="reference internal" href="#give-an-award-to-a-community">Give an award to a community</a></li>
-<li><a class="reference internal" href="#give-an-award-to-a-user">Give an award to a user</a></li>
+<li><a class="reference internal" href="#adding-awards">Adding Awards</a></li>
+<li><a class="reference internal" href="#view-existing-awards">View existing Awards</a></li>
+<li><a class="reference internal" href="#give-an-award-to-an-application">Give an award to an Application</a></li>
+<li><a class="reference internal" href="#view-existing-application-awards">View existing Application Awards</a></li>
+<li><a class="reference internal" href="#give-an-award-to-a-community">Give an Award to a Community</a></li>
+<li><a class="reference internal" href="#view-existing-community-awards">View existing Community Awards</a></li>
+<li><a class="reference internal" href="#give-an-award-to-a-user">Give an Award to a User</a></li>
+<li><a class="reference internal" href="#view-existing-user-awards">View existing User Awards</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="admin_apps.html"
-                        title="previous chapter">Admin applications</a></p>
+  <p class="topless"><a href="admin_challenges.html"
+                        title="previous chapter">Challenges admin section</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="bootstrap.html"
                         title="next chapter">Bootstraping the application</a></p>
@@ -149,7 +196,7 @@
           <a href="bootstrap.html" title="Bootstraping the application"
              >next</a> |</li>
         <li class="right" >
-          <a href="admin_apps.html" title="Admin applications"
+          <a href="admin_challenges.html" title="Challenges admin section"
              >previous</a> |</li>
         <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
       </ul>
