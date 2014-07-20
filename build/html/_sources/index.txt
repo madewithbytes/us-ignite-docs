@@ -11,13 +11,19 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   admin
+   admin_users
+   admin_blog
+   admin_apps
+   admin_awards
    bootstrap
    architecture
    commands
    accounts
    applications
+   events
    communities
-
+   organizations
 
 Indices and tables
 ==================

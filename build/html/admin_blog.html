@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Blog admin section &mdash; US Ignite 0.1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="US Ignite 0.1a documentation" href="index.html" />
+    <link rel="next" title="Admin applications" href="admin_apps.html" />
+    <link rel="prev" title="Admin Users" href="admin_users.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="admin_apps.html" title="Admin applications"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="admin_users.html" title="Admin Users"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="blog-admin-section">
+<h1>Blog admin section<a class="headerlink" href="#blog-admin-section" title="Permalink to this headline">¶</a></h1>
+<p>This section list the <tt class="docutils literal"><span class="pre">blog</span></tt> section and its usage in the site. The blog section manages directly the blog posts that appear in the site.</p>
+<p>Although these blog posts are imported from the heroku wordpress instance which is used to generate the content providing a familiar interface to US Ignite.</p>
+</div>
+<div class="section" id="view-existing-posts">
+<h1>View existing Posts<a class="headerlink" href="#view-existing-posts" title="Permalink to this headline">¶</a></h1>
+<p>The existing Posts can be listed in the <tt class="docutils literal"><span class="pre">/admin/blog/post/</span></tt> URL. From this section the details of these Posts can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Posts.</li>
+<li>Filter the Posts by: status and publication date.</li>
+<li>Search the Posts by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--blog--post.png"><img alt="_images/admin--blog--post.png" src="_images/admin--blog--post.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-posts">
+<h1>Adding Posts<a class="headerlink" href="#adding-posts" title="Permalink to this headline">¶</a></h1>
+<p>Adding posts <strong>must</strong> be  done from the heroku wordpress instance.</p>
+<p>Once the a Post has have been published in wordpress they are made available via an HTTP API to the the site. The site checks at regular intervals if there is any new blog posts available.</p>
+<p>Once the site finds a new blog posts that needs to be imported it populate the right fields in the site and makes it available.</p>
+<p>The default owner of the blog posts is specified in the <tt class="docutils literal"><span class="pre">WP_EMAIL</span></tt> setting in the codebase.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Once a post has been imported the details won&#8217;t be imported again, so corrections should be done in Edit post section.</p>
+</div>
+</div>
+<div class="section" id="editing-posts">
+<h1>Editing Posts<a class="headerlink" href="#editing-posts" title="Permalink to this headline">¶</a></h1>
+<p>This section is used to edit imported Posts. The detail URL of a blog post is available from list blog posts section:<tt class="docutils literal"><span class="pre">/admin/blog/post/</span></tt>.</p>
+<p>The following fields are available in the Posts:</p>
+<ul class="simple">
+<li>Title: Required. Title of the post.</li>
+<li>Slug: Required. Slug used in the URL.</li>
+<li>Content: Optional. HTML content of the blog post. This content is HTML imported and sanitized from the wordpress instance.</li>
+<li>Wp url: Optional. Wordpress of the original imported URL (if available).</li>
+<li>Excerpt: Optional. Short summary used to describe the content.</li>
+<li>Author: Author of the post.</li>
+<li>Publication date: Optional. Date when the blog post was publicated.</li>
+<li>Update date: Optional. Date when the post was last updated</li>
+<li>Is featured: Optional. Show this post should be shown as part of the feature list.</li>
+<li>Status: Required. Determines if the post is public or not.</li>
+<li>Is custom: Optional. If marked will stop the importer from updating the content of this Post.</li>
+<li>Tags: Optional. A comma-separated list of tags.</li>
+<li>Post attachments. Imagery that is part of the Post.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only the latest the featured items will be shown. Make sure elements that are not required to be featured are marked as non-featured.</p>
+</div>
+<a class="reference internal image-reference" href="_images/admin--blog--post--add.png"><img alt="_images/admin--blog--post--add.png" src="_images/admin--blog--post--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="unpublishing-removing-posts">
+<h1>Unpublishing / Removing  Posts<a class="headerlink" href="#unpublishing-removing-posts" title="Permalink to this headline">¶</a></h1>
+<p>In case Posts needs unpublishing it can be done from the detail admin view by changing the <tt class="docutils literal"><span class="pre">status</span></tt> of the Posts to <tt class="docutils literal"><span class="pre">draft</span></tt> or <tt class="docutils literal"><span class="pre">removed</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Posts can be browsed in the <tt class="docutils literal"><span class="pre">/admin/blog/post/</span></tt> URL.</p>
+</div>
+</div>
+<div class="section" id="view-existing-blog-links">
+<h1>View existing Blog Links<a class="headerlink" href="#view-existing-blog-links" title="Permalink to this headline">¶</a></h1>
+<p>The blog links is a list of links that appear in the sidebar of the Blog section.</p>
+<p>The existing Blog Links can be listed in the <tt class="docutils literal"><span class="pre">/admin/blog/bloglink/</span></tt> URL. From this section the details of these Blog Links can be inspected.</p>
+<p>And the following actions can be performed:</p>
+<ul class="simple">
+<li>View the details of the Blog Links.</li>
+<li>Filter the Blog Links by: creation date.</li>
+<li>Search the Blog Links by their contents.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/admin--blog--bloglink.png"><img alt="_images/admin--blog--bloglink.png" src="_images/admin--blog--bloglink.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-blog-links">
+<h1>Adding Blog Links<a class="headerlink" href="#adding-blog-links" title="Permalink to this headline">¶</a></h1>
+<p>Adding Blog Links can be done from the <tt class="docutils literal"><span class="pre">/admin/blog/bloglink/add/</span></tt> URL.</p>
+<p>The following fields are available to create Blog Links:
+- Name: Required. Name to be used in the link.
+- URL: Required. Full qualified URL to use in the link.
+- Order: Required. Order in which the link will appear.</p>
+<a class="reference internal image-reference" href="_images/admin--blog--bloglink--add.png"><img alt="_images/admin--blog--bloglink--add.png" src="_images/admin--blog--bloglink--add.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="removing-blog-links">
+<h1>Removing Blog Links<a class="headerlink" href="#removing-blog-links" title="Permalink to this headline">¶</a></h1>
+<p>In case a Blog Links needs removing it can be done using the <tt class="docutils literal"><span class="pre">delete</span></tt> button in the detail page.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Blog Links can be browsed in the <tt class="docutils literal"><span class="pre">/admin/blog/bloglink/</span></tt> URL.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Blog admin section</a></li>
+<li><a class="reference internal" href="#view-existing-posts">View existing Posts</a></li>
+<li><a class="reference internal" href="#adding-posts">Adding Posts</a></li>
+<li><a class="reference internal" href="#editing-posts">Editing Posts</a></li>
+<li><a class="reference internal" href="#unpublishing-removing-posts">Unpublishing / Removing  Posts</a></li>
+<li><a class="reference internal" href="#view-existing-blog-links">View existing Blog Links</a></li>
+<li><a class="reference internal" href="#adding-blog-links">Adding Blog Links</a></li>
+<li><a class="reference internal" href="#removing-blog-links">Removing Blog Links</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="admin_users.html"
+                        title="previous chapter">Admin Users</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="admin_apps.html"
+                        title="next chapter">Admin applications</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/admin_blog.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="admin_apps.html" title="Admin applications"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="admin_users.html" title="Admin Users"
+             >previous</a> |</li>
+        <li><a href="index.html">US Ignite 0.1a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mozilla Foundation.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>
